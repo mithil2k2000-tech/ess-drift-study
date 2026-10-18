@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Detection of harmful drift (balanced accuracy down by at least 2 points) by the original fixed gate, the calibrated ESS$^{\ast}$ (held-out reference, bootstrap 5th-percentile threshold) and a PSI rule of thumb. False alarms: share of clean batches flagged by ESS$^{\ast}$. Harmful: number of harmful batches.}
+\label{tab:calibrated}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Dataset & Threshold & False alarms & ESS$^{\ast}$ & Gate 0.75 & PSI$>$0.1 & Harmful \\
+\midrule
+Recruitment & 0.856 & 0\% & 65\% & 0\% & 92\% & 48 \\
+Adult & 0.906 & 40\% & 95\% & 0\% & 95\% & 44 \\
+German credit & 0.889 & 20\% & 56\% & 0\% & 78\% & 36 \\
+\bottomrule
+\end{tabular}
+\end{table}

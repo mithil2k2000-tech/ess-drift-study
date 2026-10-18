@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Does ESS track harm? Spearman correlation between each signal and the change in balanced accuracy over all drifted batches (75 per dataset), the share of drifted batches the dissertation's 0.75 gate would have restricted, and the lowest ESS observed.}
+\label{tab:corr}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrr}
+\toprule
+Dataset & $\rho$(ESS, $\Delta$bal.acc.) & $\rho$(PSI, $-\Delta$bal.acc.) & Batches gated below 0.75 & Min.~ESS \\
+\midrule
+Recruitment & 0.64 & 0.87 & 0\% & 0.763 \\
+Adult & 0.41 & 0.57 & 0\% & 0.825 \\
+German credit & 0.44 & 0.15 & 0\% & 0.818 \\
+\bottomrule
+\end{tabular}
+\end{table}

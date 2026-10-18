@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{Sampling variability of ESS on an unchanged batch: 10 repetitions with different sampling seeds for each local ($n_L$) and LIME ($n_F$) sample size.}
+\label{tab:variance}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrrrr}
+\toprule
+Dataset & $n_L$ / $n_F$ & ESS mean & ESS SD & L SD & F SD & Range \\
+\midrule
+Recruitment & 20 / 20 & 0.873 & 0.0200 & 0.0266 & 0.0544 & 0.058 \\
+Recruitment & 80 / 40 & 0.874 & 0.0075 & 0.0126 & 0.0271 & 0.028 \\
+Recruitment & 200 / 100 & 0.870 & 0.0054 & 0.0111 & 0.0159 & 0.017 \\
+Adult & 20 / 20 & 0.913 & 0.0089 & 0.0132 & 0.0309 & 0.031 \\
+Adult & 80 / 40 & 0.918 & 0.0037 & 0.0085 & 0.0169 & 0.011 \\
+Adult & 200 / 100 & 0.917 & 0.0033 & 0.0063 & 0.0112 & 0.010 \\
+German credit & 20 / 20 & 0.907 & 0.0119 & 0.0136 & 0.0387 & 0.039 \\
+German credit & 80 / 40 & 0.907 & 0.0055 & 0.0082 & 0.0268 & 0.017 \\
+German credit & 200 / 100 & 0.906 & 0.0024 & 0.0044 & 0.0112 & 0.008 \\
+\bottomrule
+\end{tabular}
+\end{table}

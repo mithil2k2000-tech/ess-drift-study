@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering
+\caption{Positive control: models made less reliable by label noise or overfitting, evaluated on the same clean audit batch (mean of 3 seeds). G (retrain) compares global rankings between two training runs of the same configuration.}
+\label{tab:control}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrrrr}
+\toprule
+Dataset & Model & ESS & L & F & G (retrain) & Bal. acc. \\
+\midrule
+Recruitment & regularised (default) & 0.879 & 0.875 & 0.645 & 0.949 & 0.693 \\
+ & label noise 20\% & 0.834 & 0.809 & 0.552 & 0.952 & 0.670 \\
+ & label noise 40\% & 0.819 & 0.819 & 0.457 & 0.916 & 0.598 \\
+ & overfit (depth 10, l2 0.01, 1500 it) & 0.825 & 0.774 & 0.580 & 0.927 & 0.573 \\
+ & overfit + label noise 40\% & 0.684 & 0.510 & 0.398 & 0.956 & 0.555 \\
+Adult & regularised (default) & 0.919 & 0.955 & 0.685 & 0.921 & 0.835 \\
+ & label noise 20\% & 0.901 & 0.927 & 0.650 & 0.927 & 0.818 \\
+ & label noise 40\% & 0.874 & 0.911 & 0.550 & 0.927 & 0.779 \\
+ & overfit (depth 10, l2 0.01, 1500 it) & 0.870 & 0.882 & 0.585 & 0.939 & 0.777 \\
+ & overfit + label noise 40\% & 0.715 & 0.554 & 0.467 & 0.958 & 0.608 \\
+German credit & regularised (default) & 0.910 & 0.952 & 0.647 & 0.949 & 0.692 \\
+ & label noise 20\% & 0.894 & 0.928 & 0.615 & 0.928 & 0.658 \\
+ & label noise 40\% & 0.861 & 0.919 & 0.467 & 0.897 & 0.556 \\
+ & overfit (depth 10, l2 0.01, 1500 it) & 0.909 & 0.952 & 0.640 & 0.920 & 0.649 \\
+ & overfit + label noise 40\% & 0.852 & 0.901 & 0.458 & 0.904 & 0.553 \\
+\bottomrule
+\end{tabular}
+\end{table}

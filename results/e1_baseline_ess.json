@@ -1,0 +1,14 @@
+{
+  "G": 1.0,
+  "L": 0.8834932684978591,
+  "F": 0.6364,
+  "ESS": 0.8806773073991436,
+  "gate": "full_explanations",
+  "top5": [
+    "Candidate.relocate.actual",
+    "Notice.period",
+    "Duration.to.accept.offer",
+    "Candidate.Source",
+    "Age"
+  ]
+}

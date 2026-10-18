@@ -1,0 +1,373 @@
+{
+ "e1": {
+  "baseline": {
+   "G": 1.0,
+   "L": 0.8834932684978591,
+   "F": 0.6364,
+   "ESS": 0.8806773073991436,
+   "gate": "full_explanations",
+   "top5": [
+    "Candidate.relocate.actual",
+    "Notice.period",
+    "Duration.to.accept.offer",
+    "Candidate.Source",
+    "Age"
+   ]
+  },
+  "cv": {
+   "CatBoost": {
+    "accuracy": 0.723,
+    "balanced_accuracy": 0.6877
+   },
+   "Random Forest": {
+    "accuracy": 0.7934,
+    "balanced_accuracy": 0.6402
+   }
+  }
+ },
+ "e2": {
+  "corr": [
+   {
+    "Dataset": "Recruitment",
+    "$\\rho$(ESS, $\\Delta$bal.acc.)": "0.64",
+    "$\\rho$(PSI, $-\\Delta$bal.acc.)": "0.87",
+    "Batches gated below 0.75": "0\\%",
+    "Min.~ESS": "0.763"
+   },
+   {
+    "Dataset": "Adult",
+    "$\\rho$(ESS, $\\Delta$bal.acc.)": "0.41",
+    "$\\rho$(PSI, $-\\Delta$bal.acc.)": "0.57",
+    "Batches gated below 0.75": "0\\%",
+    "Min.~ESS": "0.825"
+   },
+   {
+    "Dataset": "German credit",
+    "$\\rho$(ESS, $\\Delta$bal.acc.)": "0.44",
+    "$\\rho$(PSI, $-\\Delta$bal.acc.)": "0.15",
+    "Batches gated below 0.75": "0\\%",
+    "Min.~ESS": "0.818"
+   }
+  ],
+  "worst": [
+   {
+    "dataset": "adult",
+    "kind": "covariate",
+    "level": 2.0,
+    "ESS": 0.863,
+    "dbacc": -0.33,
+    "psi": 1.25
+   },
+   {
+    "dataset": "recruitment",
+    "kind": "missingness",
+    "level": 0.8,
+    "ESS": 0.795,
+    "dbacc": -0.144,
+    "psi": 5.331
+   },
+   {
+    "dataset": "german",
+    "kind": "missingness",
+    "level": 0.8,
+    "ESS": 0.824,
+    "dbacc": -0.127,
+    "psi": 3.547
+   }
+  ],
+  "baseline": [
+   {
+    "dataset": "recruitment",
+    "ESS": 0.88,
+    "G": 1.0,
+    "L": 0.886,
+    "F": 0.629
+   },
+   {
+    "dataset": "adult",
+    "ESS": 0.911,
+    "G": 1.0,
+    "L": 0.945,
+    "F": 0.666
+   },
+   {
+    "dataset": "german",
+    "ESS": 0.908,
+    "G": 1.0,
+    "L": 0.949,
+    "F": 0.64
+   }
+  ]
+ },
+ "e3": {
+  "variance": [
+   {
+    "Dataset": "Recruitment",
+    "$n_L$ / $n_F$": "20 / 20",
+    "ESS mean": "0.873",
+    "ESS SD": "0.0200",
+    "L SD": "0.0266",
+    "F SD": "0.0544",
+    "Range": "0.058"
+   },
+   {
+    "Dataset": "Recruitment",
+    "$n_L$ / $n_F$": "80 / 40",
+    "ESS mean": "0.874",
+    "ESS SD": "0.0075",
+    "L SD": "0.0126",
+    "F SD": "0.0271",
+    "Range": "0.028"
+   },
+   {
+    "Dataset": "Recruitment",
+    "$n_L$ / $n_F$": "200 / 100",
+    "ESS mean": "0.870",
+    "ESS SD": "0.0054",
+    "L SD": "0.0111",
+    "F SD": "0.0159",
+    "Range": "0.017"
+   },
+   {
+    "Dataset": "Adult",
+    "$n_L$ / $n_F$": "20 / 20",
+    "ESS mean": "0.913",
+    "ESS SD": "0.0089",
+    "L SD": "0.0132",
+    "F SD": "0.0309",
+    "Range": "0.031"
+   },
+   {
+    "Dataset": "Adult",
+    "$n_L$ / $n_F$": "80 / 40",
+    "ESS mean": "0.918",
+    "ESS SD": "0.0037",
+    "L SD": "0.0085",
+    "F SD": "0.0169",
+    "Range": "0.011"
+   },
+   {
+    "Dataset": "Adult",
+    "$n_L$ / $n_F$": "200 / 100",
+    "ESS mean": "0.917",
+    "ESS SD": "0.0033",
+    "L SD": "0.0063",
+    "F SD": "0.0112",
+    "Range": "0.010"
+   },
+   {
+    "Dataset": "German credit",
+    "$n_L$ / $n_F$": "20 / 20",
+    "ESS mean": "0.907",
+    "ESS SD": "0.0119",
+    "L SD": "0.0136",
+    "F SD": "0.0387",
+    "Range": "0.039"
+   },
+   {
+    "Dataset": "German credit",
+    "$n_L$ / $n_F$": "80 / 40",
+    "ESS mean": "0.907",
+    "ESS SD": "0.0055",
+    "L SD": "0.0082",
+    "F SD": "0.0268",
+    "Range": "0.017"
+   },
+   {
+    "Dataset": "German credit",
+    "$n_L$ / $n_F$": "200 / 100",
+    "ESS mean": "0.906",
+    "ESS SD": "0.0024",
+    "L SD": "0.0044",
+    "F SD": "0.0112",
+    "Range": "0.008"
+   }
+  ],
+  "null": {
+   "adult": {
+    "ESS_mean": 0.9159502315182215,
+    "ESS_p05": 0.9061548068660791,
+    "G_mean": 0.9909090909090907,
+    "G_min": 0.9636363636363636
+   },
+   "german": {
+    "ESS_mean": 0.8962799645799333,
+    "ESS_p05": 0.8886046260820459,
+    "G_mean": 0.9797270955165691,
+    "G_min": 0.95906432748538
+   },
+   "recruitment": {
+    "ESS_mean": 0.8659646008985712,
+    "ESS_p05": 0.8558857686213999,
+    "G_mean": 0.9758241758241759,
+    "G_min": 0.9560439560439562
+   }
+  }
+ },
+ "e4": [
+  {
+   "Dataset": "Recruitment",
+   "Model": "regularised (default)",
+   "ESS": "0.879",
+   "L": "0.875",
+   "F": "0.645",
+   "G (retrain)": "0.949",
+   "Bal. acc.": "0.693"
+  },
+  {
+   "Dataset": "",
+   "Model": "label noise 20\\%",
+   "ESS": "0.834",
+   "L": "0.809",
+   "F": "0.552",
+   "G (retrain)": "0.952",
+   "Bal. acc.": "0.670"
+  },
+  {
+   "Dataset": "",
+   "Model": "label noise 40\\%",
+   "ESS": "0.819",
+   "L": "0.819",
+   "F": "0.457",
+   "G (retrain)": "0.916",
+   "Bal. acc.": "0.598"
+  },
+  {
+   "Dataset": "",
+   "Model": "overfit (depth 10, l2 0.01, 1500 it)",
+   "ESS": "0.825",
+   "L": "0.774",
+   "F": "0.580",
+   "G (retrain)": "0.927",
+   "Bal. acc.": "0.573"
+  },
+  {
+   "Dataset": "",
+   "Model": "overfit + label noise 40\\%",
+   "ESS": "0.684",
+   "L": "0.510",
+   "F": "0.398",
+   "G (retrain)": "0.956",
+   "Bal. acc.": "0.555"
+  },
+  {
+   "Dataset": "Adult",
+   "Model": "regularised (default)",
+   "ESS": "0.919",
+   "L": "0.955",
+   "F": "0.685",
+   "G (retrain)": "0.921",
+   "Bal. acc.": "0.835"
+  },
+  {
+   "Dataset": "",
+   "Model": "label noise 20\\%",
+   "ESS": "0.901",
+   "L": "0.927",
+   "F": "0.650",
+   "G (retrain)": "0.927",
+   "Bal. acc.": "0.818"
+  },
+  {
+   "Dataset": "",
+   "Model": "label noise 40\\%",
+   "ESS": "0.874",
+   "L": "0.911",
+   "F": "0.550",
+   "G (retrain)": "0.927",
+   "Bal. acc.": "0.779"
+  },
+  {
+   "Dataset": "",
+   "Model": "overfit (depth 10, l2 0.01, 1500 it)",
+   "ESS": "0.870",
+   "L": "0.882",
+   "F": "0.585",
+   "G (retrain)": "0.939",
+   "Bal. acc.": "0.777"
+  },
+  {
+   "Dataset": "",
+   "Model": "overfit + label noise 40\\%",
+   "ESS": "0.715",
+   "L": "0.554",
+   "F": "0.467",
+   "G (retrain)": "0.958",
+   "Bal. acc.": "0.608"
+  },
+  {
+   "Dataset": "German credit",
+   "Model": "regularised (default)",
+   "ESS": "0.910",
+   "L": "0.952",
+   "F": "0.647",
+   "G (retrain)": "0.949",
+   "Bal. acc.": "0.692"
+  },
+  {
+   "Dataset": "",
+   "Model": "label noise 20\\%",
+   "ESS": "0.894",
+   "L": "0.928",
+   "F": "0.615",
+   "G (retrain)": "0.928",
+   "Bal. acc.": "0.658"
+  },
+  {
+   "Dataset": "",
+   "Model": "label noise 40\\%",
+   "ESS": "0.861",
+   "L": "0.919",
+   "F": "0.467",
+   "G (retrain)": "0.897",
+   "Bal. acc.": "0.556"
+  },
+  {
+   "Dataset": "",
+   "Model": "overfit (depth 10, l2 0.01, 1500 it)",
+   "ESS": "0.909",
+   "L": "0.952",
+   "F": "0.640",
+   "G (retrain)": "0.920",
+   "Bal. acc.": "0.649"
+  },
+  {
+   "Dataset": "",
+   "Model": "overfit + label noise 40\\%",
+   "ESS": "0.852",
+   "L": "0.901",
+   "F": "0.458",
+   "G (retrain)": "0.904",
+   "Bal. acc.": "0.553"
+  }
+ ],
+ "e5": [
+  {
+   "Dataset": "Recruitment",
+   "Threshold": "0.856",
+   "False alarms": "0\\%",
+   "ESS$^{\\ast}$": "65\\%",
+   "Gate 0.75": "0\\%",
+   "PSI$>$0.1": "92\\%",
+   "Harmful": "48"
+  },
+  {
+   "Dataset": "Adult",
+   "Threshold": "0.906",
+   "False alarms": "40\\%",
+   "ESS$^{\\ast}$": "95\\%",
+   "Gate 0.75": "0\\%",
+   "PSI$>$0.1": "95\\%",
+   "Harmful": "44"
+  },
+  {
+   "Dataset": "German credit",
+   "Threshold": "0.889",
+   "False alarms": "20\\%",
+   "ESS$^{\\ast}$": "56\\%",
+   "Gate 0.75": "0\\%",
+   "PSI$>$0.1": "78\\%",
+   "Harmful": "36"
+  }
+ ]
+}

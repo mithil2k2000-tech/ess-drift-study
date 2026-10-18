@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Predictive performance on the recruitment data, 25 runs (5 seeds $\times$ 5 folds), mean $\pm$ 95\% CI. Both models use class weighting.}
+\label{tab:cv}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrr}
+\toprule
+Model & Accuracy & Balanced acc. & Macro F1 & Not-joined F1 \\
+\midrule
+CatBoost & 0.723 $\pm$ 0.004 & 0.688 $\pm$ 0.005 & 0.637 $\pm$ 0.004 & 0.460 $\pm$ 0.006 \\
+Random Forest & 0.793 $\pm$ 0.003 & 0.640 $\pm$ 0.004 & 0.646 $\pm$ 0.004 & 0.417 $\pm$ 0.007 \\
+\bottomrule
+\end{tabular}
+\end{table}
