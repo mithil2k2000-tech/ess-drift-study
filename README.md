@@ -1,7 +1,9 @@
 # Does an Explanation Stability Score notice data drift?
 
+📄 **Paper (PDF): [ess-drift-study.pdf](ess-drift-study.pdf)**
+
 A reproduction and stress test of the Explanation Stability Score (ESS) from my MSc dissertation,
-on a recruitment dataset, Adult income and German credit. Paper: [`paper/main.pdf`](paper/main.pdf).
+on a recruitment dataset, Adult income and German credit.
 
 `ESS = 0.4·G + 0.4·L + 0.2·F` combines global SHAP rank stability, local perturbation stability and SHAP–LIME
 top-5 agreement, and gates what explanations a system may show (full at ≥ 0.75).
