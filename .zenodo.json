@@ -1,0 +1,22 @@
+{
+  "title": "Does an Explanation Stability Score Notice Data Drift? A Reproduction and Stress Test on Three Tabular Datasets",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "Preprint, code, data and results for: Does an Explanation Stability Score Notice Data Drift? A Reproduction and Stress Test on Three Tabular Datasets. Not peer reviewed. The PDF is ess-drift-study.pdf in this repository.",
+  "creators": [
+    {
+      "name": "Nagabathula, Mithil",
+      "affiliation": "University of East London"
+    }
+  ],
+  "keywords": [
+    "explainable AI",
+    "SHAP",
+    "LIME",
+    "data drift",
+    "MLOps"
+  ],
+  "license": "MIT",
+  "language": "eng",
+  "access_right": "open"
+}
