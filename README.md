@@ -1,6 +1,6 @@
 # Does an Explanation Stability Score notice data drift?
 
-📄 **Paper (PDF): [ess-drift-study.pdf](ess-drift-study.pdf)**
+📄 **Paper (PDF): [ess-drift-study.pdf](ess-drift-study.pdf)** · [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23592998.svg)](https://doi.org/10.5281/zenodo.23592998)
 
 A reproduction and stress test of the Explanation Stability Score (ESS) from my MSc dissertation,
 on a recruitment dataset, Adult income and German credit.

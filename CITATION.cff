@@ -9,6 +9,7 @@ authors:
     email: mithilnishu2000@gmail.com
 repository-code: "https://github.com/mithil2k2000-tech/ess-drift-study"
 license: MIT
+doi: "10.5281/zenodo.23592998"
 version: "1.0.0"
 date-released: "2026-10-21"
 keywords:
@@ -29,4 +30,5 @@ preferred-citation:
   year: 2026
   month: 10
   url: "https://github.com/mithil2k2000-tech/ess-drift-study/blob/main/ess-drift-study.pdf"
+  doi: "10.5281/zenodo.23592998"
   notes: "Preprint; not peer reviewed."
